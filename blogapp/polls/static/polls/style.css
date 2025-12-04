@@ -1,0 +1,388 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.nav-wrapper, .section-header, .footer-content, .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav, .footer-nav, .social-icons, .footer-social, .recipe-meta, .newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo, .footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav, .footer-nav {
+    gap: 40px;
+}
+
+.nav-link, .footer-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: font-weight 0.3s;
+}
+
+.nav-link:hover, .nav-link.active, .footer-link:hover {
+    font-weight: 600;
+}
+
+.social-icons, .footer-social {
+    gap: 15px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.categories-section {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.view-all {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: #E7F9FD;
+    padding: 14px 30px;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.view-all:hover {
+    background: #D5F3F8;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.category-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+}
+
+.category-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 50px;
+}
+
+.category-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.recipes-section {
+    padding: 60px 0 100px;
+}
+
+.section-intro, .newsletter-wrapper, .ad-content {
+    text-align: center;
+}
+
+.section-intro {
+    margin-bottom: 80px;
+}
+
+.main-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+    position: relative;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+.recipe-image img, .newsletter-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.like-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.like-btn:hover {
+    transform: scale(1.1);
+}
+
+.recipe-content {
+    padding: 30px;
+}
+
+.recipe-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.recipe-meta {
+    gap: 20px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.ad-card {
+    background: linear-gradient(135deg, #2FAC66, #27935A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.ad-content {
+    color: #fff;
+}
+
+.ad-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.ad-link {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+
+.newsletter-section {
+    padding: 100px 0;
+    background: #E7F9FD;
+}
+
+.newsletter-images {
+    position: relative;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.newsletter-images img {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.float-left {
+    left: 10%;
+    transform: rotate(-15deg);
+}
+
+.float-right {
+    right: 10%;
+    top: 20px;
+    transform: rotate(15deg);
+}
+
+.newsletter-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.newsletter-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.newsletter-text {
+    font-size: 16px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.newsletter-form {
+    gap: 15px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 20px 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.newsletter-input:focus {
+    border-color: #000;
+}
+
+.newsletter-btn {
+    padding: 20px 45px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.newsletter-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.footer {
+    padding: 60px 0 30px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer-content {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    opacity: 0.6;
+    max-width: 300px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.copyright {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .categories-grid, .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-title, .newsletter-title {
+        font-size: 36px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .newsletter-form, .footer-content {
+        flex-direction: column;
+    }
+}

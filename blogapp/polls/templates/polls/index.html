@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body> 
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Azza Sirniyyat evi</div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Recipes</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">About us</a>
+                </nav>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📷</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Categories</h2>
+                <a href="#" class="view-all">View All Categories</a>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #E6F3F5 0%, #DCE7F5 100%);">
+                        <div class="icon-breakfast">🍳</div>
+                    </div>
+                    <p class="category-name">Breakfast</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #E6FAE9 0%, #D5F5E1 100%);">
+                        <div class="icon-vegan">🥬</div>
+                    </div>
+                    <p class="category-name">Vegan</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #FFE5E5 0%, #FFD6D6 100%);">
+                        <div class="icon-meat">🥩</div>
+                    </div>
+                    <p class="category-name">Meat</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #FFF3E0 0%, #FFE8CC 100%);">
+                        <div class="icon-dessert">🍰</div>
+                    </div>
+                    <p class="category-name">Dessert</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #FFF9E6 0%, #FFF3CC 100%);">
+                        <div class="icon-lunch">🍞</div>
+                    </div>
+                    <p class="category-name">Lunch</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(180deg, #FFE5E5 0%, #FFCCCC 100%);">
+                        <div class="icon-chocolate">🍫</div>
+                    </div>
+                    <p class="category-name">Chocolate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="recipes-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="main-title">Simple and tasty recipes</h2>
+            </div>
+
+            <div class="recipes-grid">
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Strawberry Ice Cream">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Creamy Strawberry Ice Cream</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 20 Minutes</span>
+                            <span class="recipe-category">🍨 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Chocolate Cake">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Rich Chocolate Cake with Ganache</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 45 Minutes</span>
+                            <span class="recipe-category">🎂 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop" alt="Tiramisu">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Classic Italian Tiramisu</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 30 Minutes</span>
+                            <span class="recipe-category">🍰 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Macarons">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">French Macarons with Vanilla Cream</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 60 Minutes</span>
+                            <span class="recipe-category">🧁 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop" alt="Cheesecake">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">New York Style Cheesecake</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 50 Minutes</span>
+                            <span class="recipe-category">🍰 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card ad-card">
+                    <div class="ad-content">
+                        <h3 class="ad-title">Catdirilma rayonlara </h3>
+                        <p class="ad-link">www.azza.com</p>
+                    </div>
+                </div>
+
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Panna Cotta">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Vanilla Panna Cotta with Berry Sauce</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 25 Minutes</span>
+                            <span class="recipe-category">🍮 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1497534547324-0ebb3f052e88?w=400&h=300&fit=crop" alt="Profiteroles">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocolate Profiteroles with Cream Filling</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 40 Minutes</span>
+                            <span class="recipe-category">🍩 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?w=400&h=300&fit=crop" alt="Brownies">
+                        <button class="like-btn">❤️</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Fudgy Chocolate Brownies with Walnuts</h3>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">⏱️ 35 Minutes</span>
+                            <span class="recipe-category">🍫 Dessert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-images">
+                    <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=200&h=200&fit=crop" alt="Vegetables" class="float-left">
+                    <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?w=200&h=200&fit=crop" alt="Salad" class="float-right">
+                </div>
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Deliciousness to your inbox</h2>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address..." class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3 class="footer-logo">Azza</h3>
+                    <p class="footer-text">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Recipes</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">About us</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 AZZA. Powered by Cavad Javad </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
